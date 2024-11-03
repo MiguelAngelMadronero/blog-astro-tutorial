@@ -1,5 +1,5 @@
 ---
-import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css'
 
@@ -47,7 +47,7 @@ const listStyle= "none";
 	</head>
 	<body>
         
-        <Navigation/>
+       <Header/>
 
 
 		<h1>{pageTitle}</h1>
@@ -75,6 +75,9 @@ const listStyle= "none";
         {finished && <p>¡He terminado este tutorial!</p>}
         {goal === 3 ? <p>Mi objetivo es terminar en 3 días.</p> : <p>Mi objetivo no es terminar en 3 días</p>}
         <Footer/>
+        <script>
+			import "../scripts/menu.js"
+		</script>
 	</body>
     
 </html>
